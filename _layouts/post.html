@@ -1,0 +1,84 @@
+---
+layout: default
+comments: true
+---
+
+<div class="content">
+<header>
+<div class="unit-head">
+<div class="unit-inner unit-head-inner">
+<h1 class="h2 entry-title">{{ page.title }}</h1>
+<div class="entry-meta">
+发布: 
+<span>{{ page.date | date: '%Y-%m-%d' }}</span>
+|
+<span>作者:<a href="http://brucebot.com">于仁颇黎</a></span>
+</div>
+</div><!-- unit-inner -->
+</div><!-- unit-head -->
+</header>
+
+<div class="bd">
+<div class="entry-content">
+{{content }}
+<div class="meta">
+<p><center><script type="text/javascript"><!--
+google_ad_client = "";
+/* 468X60 ads */
+google_ad_slot = "";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></center></p>
+<div class="entry-utility">
+<span class="cat-links">分类: <a href="/categories/{{page.categories}}">{{ page.categories }}</a></span>|
+<span class="tag-links">标签:<a href="/tags/{{page.tags}}">{{ page.tags }}</a> </span>
+</div><!-- .entry-utility -->
+</div><!-- meta -->
+<br/>
+<div><small>
+ <ul>转载请以超链接形式注明:
+ 	<li>文章作者:<a href="http://brucebot.com">于仁颇黎</a></li>
+ 	<li>原始出处:<a href="{{ page.url }}">{{ page.title }}(http://brucebot.com{{ page.url }})</a></li>
+ 商业网站如需使用请联系:<a href=mailto:bruceboty@gmail.com>bruceboty@gmail.com</a>
+</ul></small>
+</div><!--copyright-->
+</div><!-- entry-content -->
+<div><nav class="pagination">
+{% if page.previous %}
+<div class="prev"><a class="internal" rel="prev"  href="{{ page.previous.url }}" title="View {{ page.previous.title }}">&laquo; {{ page.previous.title }}</a>
+{% endif %}
+{% if page.previous and page.next %}
+|<a href="/archive.html">文章归档</a>|
+{% endif %}
+{% if page.next %}
+<a class="internal" rel="next"  href="{{ page.next.url }}" title="View {{ page.next.title }}">{{ page.next.title }} &raquo;</a></div>
+{% endif %}
+</nav>
+</div>
+<br/>
+<div id="related-posts">
+<h3>相关文章</h3>
+{% for post in site.related_posts limit:7 %}
+<li><a href="{{ post.url }}">{{ post.title }}</a><br /></li>
+{% endfor %}
+</div>
+<br>
+<div class="misc-content">
+<div class="comment">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'disqus_shortname'; 
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+</div>
+</div><!-- misc-content -->
+</div><!-- bd -->
+</div><!-- content -->

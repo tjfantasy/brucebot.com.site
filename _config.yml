@@ -1,0 +1,6 @@
+markdown: rdiscount
+permalink: /:year/:month/:title/
+pygments: true
+exclude: ['Rakefile', 'README.markdown', 'config.rb']
+base_url: http://brucebot.com
+paginate: 5 //the number of post per page

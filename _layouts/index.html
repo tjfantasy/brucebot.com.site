@@ -1,0 +1,30 @@
+---
+layout: default
+title: 于仁颇黎|机器人行业从业者,观察者
+---
+{% for post in site.posts limit:7 %}
+<div class="wrapper">
+    <h2 class="h2 entry-title"><a href="{{ post.url }}">{{ post.title }}</a> </h2>
+    <div class="entry-meta">
+                            发布: <span>{{ post.date | date:"%Y-%m-%d" }}</span>
+                            |
+                            <span>作者:<a href="http://brucebot.com">于仁颇黎</a></span>
+                        </div>
+  {% if excerpt and post.excerpt %}
+    {{ post.excerpt }}
+    <p> <a href="{{ post.url }}/#more" class="more-link"><span class="readmore">阅读全文 &raquo; </span></a></p>
+  {% else %}
+    {{ post.content | mark_excerpt }}
+  {% endif %}
+</div>
+    <div class="entry-utility">
+    <span class="cat-links">分类: <a href="/categories/{{page.categories}}">{{ page.categories }}</a></span>                    
+    </div><!-- .entry-utility -->                                                                                                
+    {% endif %}
+    <br>
+    </div>
+<div class="span9 column">
+        <p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class="icon-chevron-left"></i></a>   {% endif %}   {% if page.next.url %}    <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}"><i class="icon-chevron-right"></i></a>   {% endif %} </p>  
+</div>
+{% endfor %}
+

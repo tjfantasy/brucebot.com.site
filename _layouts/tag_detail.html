@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+  <h1 calss="tags">{{ site.tags[page.tag].size }} 篇包含 &ldquo;<em>{{ page.tag }}</em>&rdquo; 标签的文章</h1>
+  <ul class="post">
+{% for post in site.tags[page.tag] %}
+      <li>{{ post.date | date: "%b-%d-%Y"  }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+  </ul>

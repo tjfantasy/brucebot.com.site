@@ -1,0 +1,31 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>于仁颇黎</title>
+  <link href="http://brucebot.com/"/>
+  <link type="application/atom+xml" rel="self" href="http://brucebot.com/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://brucebot.com/</id>
+  <author>
+    <name>于仁颇黎</name>
+    <email>brucebot@gmail.com</email>
+  </author>
+
+  {% for post in site.posts limit:17 %}
+  <entry>
+    <id>http://brucebot.com{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://brucebot.com{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>于仁颇黎</name>
+      <uri>http://brucebot.com/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+ 
+</feed>
