@@ -5,8 +5,8 @@ Source for [brucebot.com](http://brucebot.com) , a Personal blog about Robotics 
 
 ###instagram/likedphoto
 
-Set your own instagrame **access_token** in */instagram/instagram.php* and */likedphoto/
-instagrame.php*.
+Set your own instagram **access_token** in */instagram/instagram.php* and */likedphoto/
+instagram.php*.
 
 `$access_token='Your token';`
 
