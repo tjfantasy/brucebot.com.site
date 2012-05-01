@@ -1,0 +1,687 @@
+
+
+/* =Reset
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-weight: normal;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote {
+  quotes: none;
+}
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+del {
+  text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a img {
+  border: none;
+}
+
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button { 
+  cursor: pointer; 
+}
+
+
+/* =Structure
+-------------------------------------------------------------- */
+#branding,
+#main,
+#colophon{
+  margin: 0;
+}
+
+#wrapper {
+  padding: 0;
+  width: 1000px;
+  margin:  0 auto;
+  position: relative;
+}
+
+/* =Layout
+-------------------------------------------------------------- */
+#container {
+  float: left;
+  margin: 0 0 0 300px;
+  min-height: 500px;
+}
+#content {
+  margin: 0 0 0 0px;
+}
+#sidebar{
+  width: 250px;
+  float: left;
+}
+#primary{
+  position: absolute;
+  left: 0;
+  top: 150px;
+  width: 275px;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
+#footer {
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+/* =Fonts
+-------------------------------------------------------------- */
+body,
+input,
+textarea,
+.page-title span,
+.pingback a.url {
+font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;  
+}
+#site-info,
+#primary,
+.entry-content label,
+.entry-content tr th,
+.entry-content thead th,
+.entry-meta,
+.entry-utility,
+input[type=submit],
+ul#menu-footer-nav {
+ font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;  
+}
+
+#site-title,
+.entry-title,
+.widget-title{
+font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;  
+
+}
+
+
+/* =Global Elements
+-------------------------------------------------------------- */
+
+body {
+  background: #eee;
+}
+body,
+input,
+textarea {
+  color: #444;
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+hr {
+  background-color: #e7e7e7;
+  border: 0;
+  clear: both;
+  height: 1px;
+  margin-bottom: 18px;
+}
+
+/* Text elements */
+code {
+    font-size:12px;
+  background-color:#f8f8ff;
+  color:#d14;
+  padding:0 .2em;
+  border:1px solid #dedede;
+}
+p {
+  margin-bottom: 0.8em;
+  text-indent:2.1em;
+}
+ul {
+  list-style: square;
+  margin: 0 0 18px 1.5em;
+}
+ol {
+  list-style: decimal;
+  margin: 0 0 18px 1.5em;
+}
+ol ol {
+  list-style: decimal;
+}
+ol ol ol {
+  list-style: decimal;
+}
+ol ol ol ol {
+  list-style: decimal;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-bottom: 0;
+}
+dl {
+  margin: 0 0 24px 0;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: 18px;
+}
+strong {
+  font-weight: bold;
+}
+cite,
+em,
+i {
+  font-style: italic;
+  color: #777;
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;  
+}
+big {
+  font-size: 131.25%;
+}
+ins {
+  background: #ffc;
+  text-decoration: none;
+}
+blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+pre {
+    margin:1em 0;
+  font-size:12px;
+  border:1px solid #ddd;
+  padding:5px;
+  line-height:1.5em;
+  color:#d14;
+  overflow:auto;
+  -webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;border-radius:3px;
+}
+pre code {
+  padding:0;
+  font-size:12px;
+  background-color:#eee;
+  border:none;
+}
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+sup,
+sub {
+  height: 0;
+  line-height: 1;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  bottom: 1ex;
+}
+sub {
+  top: .5ex;
+}
+input[type="text"],
+textarea {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+  padding: 2px;
+}
+
+/* main link colors */
+
+a:link,
+a:visited{
+  color: #9C0001;
+  text-decoration: none;
+}
+a:active,
+a:hover{
+  color: #000;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+  position: absolute;
+  left: -9000px;
+}
+
+/* =Header
+-------------------------------------------------------------- */
+#header {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  width: 250px;
+  border-bottom: 1px solid #E0E0E0;
+}
+#masthead{
+  border-bottom: 1px solid #a6a6a6;
+  padding-bottom: 10px;
+}
+
+#site-title {
+  font-size: 2.2em;
+  line-height: 1.1em;
+  width: 250px;
+  text-shadow: 0 1px 0 #fff;
+  margin-left: 10px;
+}
+
+#site-title a {
+  color: #9C0001;
+  text-decoration: none;
+}
+
+/* If you would like to use your own logo un-comment the following section */
+
+/*
+#site-title{
+  margin-left: 0;
+}
+#site-title a {
+  background: url(images/logo.jpg) no-repeat;
+  display:block;
+  text-indent:-9000px;
+  width: 250px;
+  height: 80px;
+}
+*/
+
+/* =Content
+-------------------------------------------------------------- */
+#main {
+  clear: both;
+  overflow: hidden;
+  padding: 0 0 20px 0;
+}
+#content {
+  margin: 50px 0 20px 0;
+}
+#content,
+#content input,
+#content textarea {
+  color: #444;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+  line-height: 1.5em;
+  margin: 0 0 20px 0;
+}
+#content table {
+  border: 1px solid #e7e7e7;
+  margin: 0 -1px 24px 0;
+  text-align: left;
+  width: 100%;
+}
+#content ul{margin:1em 0 1em 2em;}
+#content ol{margin:1em 0 1em 2em;}
+#content ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+#content ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+
+#content tr th,
+#content thead th {
+  color: #888;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  padding: 9px 24px;
+}
+#content tr td {
+  border-top: 1px solid #e7e7e7;
+  padding: 6px 24px;
+}
+#content tr.odd td {
+  background: #f2f7fc;
+}
+
+/* entry title */
+#content .entry-title {
+  font-size: 2.5em;
+  margin: 4px 0 20px 0;
+  padding-bottom: 5px;
+  font-weight: 600;
+  color: #7b7a79;
+  text-shadow: 0 1px 0 #fff;
+  border-bottom:4px solid #e0e0e0;
+}
+
+/* entry title links */
+.entry-title a:link,
+.entry-title a:visited {
+  color: #7b7a79;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+}
+.entry-title a:active,
+.entry-title a:hover {
+  color: #9d9b91;
+}
+/* entry meta */
+.entry-meta {
+  color: #777;
+  font-size: .75em;
+}
+.entry-meta abbr,
+.entry-utility abbr {
+  border: none;
+}
+.entry-meta abbr:hover,
+.entry-utility abbr:hover {
+  border-bottom: 1px dotted #666;
+}
+
+/* content / summary */
+.entry-content,
+.entry-summary {
+  clear: both;
+  padding: 12px 0 0 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+#content .entry-summary p:last-child {
+  margin-bottom: 12px;
+}
+.entry-content input {
+  margin: 0 0 24px 0;
+}
+.entry-content input.file,
+.entry-content input.button {
+  margin-right: 24px;
+}
+.entry-content label {
+  color: #888;
+  font-size: 12px;
+}
+.entry-content select {
+  margin: 0 0 24px 0;
+}
+.entry-content sup,
+.entry-content sub {
+  font-size: 10px;
+}
+.entry-content blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+.entry-content.photosdiv{
+  background-color: #42403C;
+    height: 188px;
+    padding: 10px 10px 0;
+    width: 160px;
+    /*position: relative;*/
+  }
+.entry-content.photosdiv.picdiv{
+  display: inline-block;
+  max-width:110px;
+  max-height:110px;
+  min-height: 110px;
+  min-width: 110px;
+  margin:6px 5px 5px 5px;
+  background-color: #4B4030;
+  padding: 9px;
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.55);
+}
+
+/* social links on single pages */
+.social-links-single{
+  width: 100%;
+  overflow: hidden;
+}
+.facebook-single{
+  margin: 15px 0 0 0;
+  float: left;
+}
+.weibo-single{
+  float: left;
+  margin: 17px 10px 0 0;
+}
+.qzone-single{
+  float: left;
+  margin: 17px 10px 0 0;
+}
+.renren-single{
+  float: left;
+  margin: 17px 10px 0 0;
+}
+
+.twitter-single{
+  float: left;
+  margin: 17px 10px 0 0;
+}
+
+.entry-utility {
+  clear: both;
+  color: #888;
+  font-size: 12px;
+  line-height: 18px;
+}
+.entry-meta a,
+.entry-utility a {
+  color: #888;
+}
+.entry-meta a:hover,
+.entry-utility a:hover {
+  color: #000;
+}
+
+/* continue reading link */
+a.more-link{
+  text-decoration: none;
+}
+a.more-link:hover{
+  text-decoration: underline;
+}
+
+/* pagination */
+#pagination{
+  height: 30px;
+  font-size: .8125em;
+}
+#pagination .page-numbers{
+  border: 1px solid #a6a6a6;
+  padding: 5px;
+}
+#pagination a:link{
+  text-decoration: none;
+}
+#pagination a:active,
+#pagination a:visited,
+#pagination a:hover{
+  text-decoration: underline;
+}
+.pagenavi {
+  clear: both;
+}
+
+.pagenavi a, .pagenavi span {
+  text-decoration: none;
+  border: 1px solid #BFBFBF;
+  padding: 3px 5px;
+  margin: 2px;
+}
+
+.pagenavi a:hover, .pagenavi span.current {
+  border-color: #000;
+}
+
+.pagenavi span.current {
+  font-weight: bold;
+}
+
+/* =Images
+-------------------------------------------------------------- */
+
+#content img {
+  margin: 0;
+  height: auto;
+  max-width: 640px;
+  width: auto;
+}
+/* = Areas
+-------------------------------------------------------------- */
+.widget-area ul {
+  list-style: none;
+  margin-left: 0;
+}
+.widget-area ul ul {
+  list-style: square;
+  margin-left: 1.3em;
+}
+.widget_search #s {/* This keeps the search inputs in line */
+  width: 60%;
+}
+.widget_search label {
+  display: none;
+}
+.widget-container {
+  margin: 0 0 18px 0;
+}
+.widget-title {
+  color: #7B7A79;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.widget-area a:link,
+.widget-area a:visited {
+  color: #444;
+  font-size: 1.2em;
+  text-shadow: 0 1px 0 #fff;
+  text-decoration: none;
+}
+.widget-area a:active,
+.widget-area a:hover {
+  color: #777;
+}
+.widget-area .entry-meta {
+  font-size: 11px;
+}
+.widget_rss a.rsswidget {
+  color: #000;
+}
+.widget_rss a.rsswidget:hover {
+  color: #5485e4;
+}
+.widget_rss .widget-title img {
+}
+
+/* Main sidebars */
+#main .widget-area ul {
+  margin: 20px;
+  padding: 0;
+}
+#main .widget-area ul ul {
+  margin: 10px 0 0 10px;
+  padding: 0;
+  list-style-type: none;
+}
+#main ul.sub-menu,
+#main ul.children {
+  margin: 0 0 0 10px !important;
+}
+
+/* =Footer
+-------------------------------------------------------------- */
+
+/* Structure the footer area */
+#site-info {
+  float: right;
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+  width: 500px;
+}
+#footer {
+  margin-bottom: 20px;
+  line-height: 24px;
+  margin: 0 0 24px 0;
+  padding: 0 0 300px 50px;
+  position: relative;
+  
+}
+#colophon {
+}
+#site-info {
+  font-weight: bold;
+}
+#site-info a {
+  color: #444;
+  text-decoration: none;
+}
+
+
+/* =Mobile Safari ( iPad, iPhone and iPod Touch )
+-------------------------------------------------------------- */
+
+pre {
+  -webkit-text-size-adjust: 140%;
+}
+code {
+  -webkit-text-size-adjust: 160%;
+}
+#access,
+.entry-meta,
+.entry-utility,
+.navigation,
+.widget-area {
+  -webkit-text-size-adjust: 120%;
+}
+#site-description {
+  -webkit-text-size-adjust: none;
+}
+/* iPhone-specific styles */
+@media only screen and (max-device-width: 480px) { 
+
+  html {
+    -webkit-text-size-adjust: none;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    }
+  #content img { 
+    max-width: 250px;
+    }
+  .center {
+    width: 100% !important;
+    text-align: center;
+    }
+  a:link, a:visited {
+    text-decoration: underline;
+    color: #0000CC;
+    }
+  a:hover, a:active {
+    text-decoration: underline;
+    color: #660066;
+    }
+
+}

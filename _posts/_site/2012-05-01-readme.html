@@ -1,0 +1,32 @@
+<p>Source for <a href="http://brucebot.com">brucebot.com</a> , a Personal blog about Robotics Automation.</p>
+
+<p>Read the Post <a href="http://brucebot.com/2012/03/blog_with_jekyll_and_markdown/">Blog with Jekyll and Markdown</a> for more information.(Chinese Only)</p>
+
+<h2>Usage</h2>
+
+<h3>instagram/likedphoto</h3>
+
+<p>Set your own instagram <strong>access_token</strong> in <em>/instagram/instagram.php</em> and <em>/likedphoto/
+instagram.php</em>.</p>
+
+<p><code>$access_token='Your token';</code></p>
+
+<h3>New post</h3>
+
+<p><code>rake write["post tile",category]</code></p>
+
+<p>Automatically Open the new post in default text editor, Mine is <a href="http://mouapp.com">Mou</a>.</p>
+
+<h3>New Page</h3>
+
+<p><code>rake page["title"]</code></p>
+
+<p>Automatically Open the new post in default text editor, Mine is <a href="http://mouapp.com">Mou</a>.</p>
+
+<h3>Rake deploy</h3>
+
+<p>If you want to do <em>rake deploy</em> as I do, add your own remote site info to <strong>Rakefile</strong></p>
+
+<p><code>system "jekyll --rdiscount &amp;&amp; rsync -avz --progress --delete _site/ XXX@XXX.com:/home/jekyll/ "</code></p>
+
+<p>--EOF--</p>

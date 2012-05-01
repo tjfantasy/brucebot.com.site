@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>brucebot.com</title>
+    <link>http://brucebot.com/</link>
+    <atom:link href="http://brucebot.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>brucebot</description>
+    <language>en-us</language>
+    <pubDate>Tue, 01 May 2012 20:40:12 +0800</pubDate>
+    <lastBuildDate>Tue, 01 May 2012 20:40:12 +0800</lastBuildDate>
+
+    
+    <item>
+      <title>README</title>
+      <link>http://brucebot.com/2012/05/readme/</link>
+      <pubDate>Tue, 01 May 2012 20:38:19 +0800</pubDate>
+      <author>bruceboty@gmail.com (brucebot)</author>
+      <guid>http://brucebot.com/2012/05/readme</guid>
+      <description>&lt;p&gt;Source for &lt;a href=&quot;http://brucebot.com&quot;&gt;brucebot.com&lt;/a&gt; , a Personal blog about Robotics Automation.&lt;/p&gt;
+
+&lt;p&gt;Read the Post &lt;a href=&quot;http://brucebot.com/2012/03/blog_with_jekyll_and_markdown/&quot;&gt;Blog with Jekyll and Markdown&lt;/a&gt; for more information.(Chinese Only)&lt;/p&gt;
+
+&lt;h2&gt;Usage&lt;/h2&gt;
+
+&lt;h3&gt;instagram/likedphoto&lt;/h3&gt;
+
+&lt;p&gt;Set your own instagram &lt;strong&gt;access_token&lt;/strong&gt; in &lt;em&gt;/instagram/instagram.php&lt;/em&gt; and &lt;em&gt;/likedphoto/
+instagram.php&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$access_token='Your token';&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3&gt;New post&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;rake write[&quot;post tile&quot;,category]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Automatically Open the new post in default text editor, Mine is &lt;a href=&quot;http://mouapp.com&quot;&gt;Mou&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;New Page&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;rake page[&quot;title&quot;]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Automatically Open the new post in default text editor, Mine is &lt;a href=&quot;http://mouapp.com&quot;&gt;Mou&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Rake deploy&lt;/h3&gt;
+
+&lt;p&gt;If you want to do &lt;em&gt;rake deploy&lt;/em&gt; as I do, add your own remote site info to &lt;strong&gt;Rakefile&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;system &quot;jekyll --rdiscount &amp;amp;&amp;amp; rsync -avz --progress --delete _site/ XXX@XXX.com:/home/jekyll/ &quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;--EOF--&lt;/p&gt;
+</description>
+    </item>
+    
+
+  </channel> 
+</rss>
