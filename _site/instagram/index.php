@@ -115,7 +115,7 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 					<h3 class="widget-title">最近文章</h3>
 						<ul>
 						
-							<li><a href="/2012/05/readme/">README</a></li>
+							<li><a href="/hell/2012/05/01/readme.html">README</a></li>
 						
 					</ul>
 					<h3 class="widget-title">最近评论</h3>

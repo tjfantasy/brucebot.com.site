@@ -6,16 +6,16 @@
     <atom:link href="http://brucebot.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>brucebot</description>
     <language>en-us</language>
-    <pubDate>Tue, 01 May 2012 20:40:12 +0800</pubDate>
-    <lastBuildDate>Tue, 01 May 2012 20:40:12 +0800</lastBuildDate>
+    <pubDate>Tue, 01 May 2012 20:44:49 +0800</pubDate>
+    <lastBuildDate>Tue, 01 May 2012 20:44:49 +0800</lastBuildDate>
 
     
     <item>
       <title>README</title>
-      <link>http://brucebot.com/2012/05/readme/</link>
+      <link>http://brucebot.com/hell/2012/05/01/readme.html</link>
       <pubDate>Tue, 01 May 2012 20:38:19 +0800</pubDate>
       <author>bruceboty@gmail.com (brucebot)</author>
-      <guid>http://brucebot.com/2012/05/readme</guid>
+      <guid>http://brucebot.com/hell/2012/05/01/readme</guid>
       <description>&lt;p&gt;Source for &lt;a href=&quot;http://brucebot.com&quot;&gt;brucebot.com&lt;/a&gt; , a Personal blog about Robotics Automation.&lt;/p&gt;
 
 &lt;p&gt;Read the Post &lt;a href=&quot;http://brucebot.com/2012/03/blog_with_jekyll_and_markdown/&quot;&gt;Blog with Jekyll and Markdown&lt;/a&gt; for more information.(Chinese Only)&lt;/p&gt;
